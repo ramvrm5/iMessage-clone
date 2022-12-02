@@ -12,7 +12,6 @@ function Sidebar() {
     const user = useSelector(selectUser);
     const [chats, setChats] = useState([]);
 
-
     useEffect(() => {
         db.collection('chats').onSnapshot((snapshot) => (
             setChats(
