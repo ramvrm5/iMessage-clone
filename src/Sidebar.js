@@ -9,8 +9,9 @@ import { useSelector } from 'react-redux';
 import db, { auth } from './firebase';
 
 function Sidebar() {
-    const user = useSelector(selectUser);
     
+    const user = useSelector(selectUser);
+
     const [chats, setChats] = useState([]);
 
     useEffect(() => {
