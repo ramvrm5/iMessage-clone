@@ -6,11 +6,16 @@ import RateReviewOutlinedIcon from '@material-ui/icons/RateReviewOutlined';
 import SidebarChat from './SidebarChat';
 import { selectUser, login, logout } from './features/userSlice';
 import { useSelector } from 'react-redux';
+
 import db, { auth } from './firebase';
 
+
 function Sidebar() {
+
     const user = useSelector(selectUser);
+
     const [chats, setChats] = useState([]);
+
 
     useEffect(() => {
         db.collection('chats').onSnapshot((snapshot) => (
