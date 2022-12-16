@@ -42,8 +42,11 @@ function Sidebar() {
                 </div>
 
                 <IconButton
+
                     variant="outlined" className='sidebar__inputButton'>
+
                     <RateReviewOutlinedIcon onClick={addChat} />
+                    
                 </IconButton>
 
             </div>
