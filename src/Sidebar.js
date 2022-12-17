@@ -42,15 +42,14 @@ function Sidebar() {
                 </div>
 
                 <IconButton
-
                     variant="outlined" className='sidebar__inputButton'>
-
                     <RateReviewOutlinedIcon onClick={addChat} />
-                    
                 </IconButton>
 
             </div>
+            
             <div className="sidebar__chats">
+
                 {chats.map(({ id, data: { chatName } }) => (
                     <SidebarChat
                         key={id}
