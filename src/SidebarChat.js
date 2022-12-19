@@ -8,11 +8,8 @@ import * as timeago from 'timeago.js';
 
 
 function SidebarChat({id,chatName}) {
-
     const dispatch = useDispatch();
-
     const [chatInfo, setChatInfo] = useState([]);
-    
 
     useEffect(() => {
         db.collection('chats')
