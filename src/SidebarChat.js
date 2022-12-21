@@ -30,11 +30,8 @@ function SidebarChat({id,chatName}) {
                 })
             )
         } className="sidebarChat">
-
             <Avatar src={chatInfo[0]?.photo}/>
-
             <div className="sidebarChat__info">
-                
                 <h3>{chatName}</h3>
                 <p>{chatInfo[0]?.message}</p>
                 <small>{timeago.format(new Date(chatInfo[0]?.timestamp?.toDate()))}</small>
