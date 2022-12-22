@@ -63,9 +63,13 @@ function Chat() {
 
 
             <div className="chat__input">
+
                 <form>
+
                     <input value={input} onChange={(e) => setInput(e.target.value)} placeholder="iMesage" type="text" />
+
                     <button type="sumit" onClick={sendMessage}>Send Mesage</button>
+                    
                 </form>
 
                 <IconButton>
