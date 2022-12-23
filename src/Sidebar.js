@@ -47,9 +47,7 @@ function Sidebar() {
                 </IconButton>
 
             </div>
-            
             <div className="sidebar__chats">
-
                 {chats.map(({ id, data: { chatName } }) => (
                     <SidebarChat
                         key={id}
